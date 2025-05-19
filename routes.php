@@ -2,7 +2,7 @@
 
 use APP\Controller\{
 
-    AlunoCanotroller,
+    AlunoController,
     InicialController,
     LoginController,
     AutorController,
@@ -11,7 +11,7 @@ use APP\Controller\{
     EmprestimosController,
 };
 
-$url = parse_ur(@_SERVER['REQUEST_URL'],PHP_URL_PATH);
+$url = parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH);
 
 switch($url){
     case '/':
